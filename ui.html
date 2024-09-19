@@ -1,0 +1,17 @@
+<h2>Extended Color Palettes</h2>
+<p>Color: <input id="starter-color" value="1"></p>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('create').onclick = () => {
+  const textbox = document.getElementById('starter-color');
+  const color = parseInt(textbox.value, 10);
+  parent.postMessage({ pluginMessage: { type: 'create-palette', color } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>

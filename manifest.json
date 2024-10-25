@@ -2,7 +2,7 @@
   "name": "color-converter",
   "id": "1417957992828018188",
   "api": "1.0.0",
-  "main": "code.js",
+  "main": "src/code.ts",
   "capabilities": [],
   "enableProposedApi": false,
   "documentAccess": "dynamic-page",
